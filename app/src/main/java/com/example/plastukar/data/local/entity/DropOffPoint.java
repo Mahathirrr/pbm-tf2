@@ -1,11 +1,12 @@
 package com.example.plastukar.data.local.entity;
-
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.annotation.NonNull;
 
 @Entity(tableName = "drop_off_points")
 public class DropOffPoint {
     @PrimaryKey
+    @NonNull
     private String id;
     private String name;
     private String address;
@@ -15,7 +16,7 @@ public class DropOffPoint {
     private boolean isOpen;
     private String acceptedTypes;
 
-    public DropOffPoint(String id, String name, String address, double latitude, double longitude) {
+    public DropOffPoint(@NonNull String id, String name, String address, double latitude, double longitude) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -24,8 +25,9 @@ public class DropOffPoint {
     }
 
     // Getters and Setters
+    @NonNull
     public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public void setId(@NonNull String id) { this.id = id; }
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }

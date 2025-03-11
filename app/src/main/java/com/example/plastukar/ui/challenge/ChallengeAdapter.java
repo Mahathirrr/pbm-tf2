@@ -2,10 +2,13 @@ package com.example.plastukar.ui.challenge;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.plastukar.data.local.entity.Challenge;
 import com.example.plastukar.databinding.ItemChallengeBinding;
+
 import java.util.List;
 
 public class ChallengeAdapter extends RecyclerView.Adapter<ChallengeAdapter.ChallengeViewHolder> {

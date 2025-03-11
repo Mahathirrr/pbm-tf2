@@ -4,12 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
+
 import com.bumptech.glide.Glide;
 import com.example.plastukar.data.local.entity.Achievement;
 import com.example.plastukar.data.local.entity.Transaction;
 import com.example.plastukar.databinding.FragmentProfileBinding;
+
 import java.util.ArrayList;
 import java.util.List;
 

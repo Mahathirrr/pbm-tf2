@@ -1,11 +1,12 @@
 package com.example.plastukar.data.local.entity;
-
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.annotation.NonNull;
 
 @Entity(tableName = "achievements")
 public class Achievement {
     @PrimaryKey
+    @NonNull
     private String id;
     private String title;
     private String description;
@@ -16,7 +17,7 @@ public class Achievement {
     private int progress;
     private int targetProgress;
 
-    public Achievement(String id, String title, String description, int pointsReward) {
+    public Achievement(@NonNull String id, String title, String description, int pointsReward) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -26,8 +27,9 @@ public class Achievement {
     }
 
     // Getters and Setters
+    @NonNull
     public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public void setId(@NonNull String id) { this.id = id; }
 
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }

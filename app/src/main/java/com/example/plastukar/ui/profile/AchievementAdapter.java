@@ -2,11 +2,14 @@ package com.example.plastukar.ui.profile;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.example.plastukar.data.local.entity.Achievement;
 import com.example.plastukar.databinding.ItemAchievementBinding;
+
 import java.util.List;
 
 public class AchievementAdapter extends RecyclerView.Adapter<AchievementAdapter.AchievementViewHolder> {

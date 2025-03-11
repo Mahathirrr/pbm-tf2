@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private void setupClickListeners() {
         binding.loginButton.setOnClickListener(v -> attemptLogin());
-        binding.registerText.setOnClickListener(v -> 
-            startActivity(new Intent(this, RegisterActivity.class)));
+        binding.registerText.setOnClickListener(v ->
+                startActivity(new Intent(this, RegisterActivity.class)));
     }
 
     private void attemptLogin() {
